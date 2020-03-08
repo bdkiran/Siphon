@@ -1,0 +1,58 @@
+{
+    "query":[
+      {
+        "search_terms":[
+          "Court orders judgement entered for",
+          "Court orders judgment entered for"
+        ],
+        "scope":"Contains Any",
+        "attribute":"Docket",
+        "proximity":"Next To Each Other"
+      }
+    ],
+    "page": 1,
+    "sort_by":"Filing Date",
+    "filters":[
+      {
+        "filter_type":"case_type",
+        "field":"group",
+        "keys":[
+          12
+        ]
+      },
+      {
+        "filter_type":"case_status",
+        "field":"name",
+        "keys":[
+          4, 5
+        ]
+      },
+      {
+        "filter_type":"jurisdiction",
+        "field":"court_system",
+        "keys":[
+          1
+        ]
+      },
+      {
+        "filter_type":"docket_date",
+        "field":"from_date",
+        "date":"2019-03-01"
+      },
+      {
+        "filter_type":"docket_date",
+        "field":"to_date",
+        "date":"2019-03-31"
+      },
+      {
+        "filter_type":"filing_date",
+        "field":"from_date",
+        "date":"2019-01-01"
+      },
+      {
+        "filter_type":"filing_date",
+        "field":"to_date",
+        "date":"2019-12-31"
+      }
+    ]
+  }

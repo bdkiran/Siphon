@@ -1,0 +1,10 @@
+Request to return the mappings for filtering.
+Jurisdiction Filters:
+curl -X GET "https://api.unicourt.com/rest/v1/searchFilters/jurisdiction/?token=55ebc2e70236ad95b0f8cc6263223dc143a02737" -H "accept: application/json"
+
+Case Status Filters:
+curl -X GET "https://api.unicourt.com/rest/v1/searchFilters/caseStatus/?token=55ebc2e70236ad95b0f8cc6263223dc143a02737" -H "accept: application/json"
+
+
+Case Type Filters:
+curl -X GET "https://api.unicourt.com/rest/v1/searchFilters/caseType/?token=55ebc2e70236ad95b0f8cc6263223dc143a02737" -H "accept: application/json"

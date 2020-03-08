@@ -1,0 +1,289 @@
+{
+    "error": false,
+    "message": "OK",
+    "data": {
+        "result": [
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Pasadena Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-09-25 01:33:52",
+                    "created_date": "2019-02-28 06:02:40",
+                    "case_name": "LISA J RUCKH VS ARACELI HERNANDEZ VIDAL",
+                    "filing_date": "2019-02-27",
+                    "case_id": "FZER2IJTIQ2U4GQXIBMGVC3BMJKRG0906",
+                    "case_number": "19PDSC00893",
+                    "docket": "03\/29\/2019 <b>Court orders judgment entered for<\/b> Plaintiff Lisa J Ruckh against  ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Compton Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-12-12 01:57:20",
+                    "created_date": "2019-02-27 06:02:40",
+                    "case_name": "WILLIE J. THOMAS VS WITMAN RENE CIFUENTES, ET AL.",
+                    "filing_date": "2019-02-26",
+                    "case_id": "F5FB4IRUIU3E6GYYIFMWXDDCMRKBM0907",
+                    "case_number": "19CMSC00440",
+                    "docket": "03\/28\/2019  ... \/2019; Result Type to Held? <b>Court orders judgment entered for<\/b> Plaintiff Willie J. Thomas against ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Pasadena Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-09-29 01:04:00",
+                    "created_date": "2019-02-27 06:04:48",
+                    "case_name": "JESUS JUAN MARTINEZ VS SAM IEZZA, ET AL.",
+                    "filing_date": "2019-02-26",
+                    "case_id": "FRDRWHZRIIZUYGAVHZLGRCK7MFKA20904",
+                    "case_number": "19PDSC00888",
+                    "docket": "03\/28\/2019 <b>Court orders judgment entered for<\/b> Defendant on defendant's claim  ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Compton Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-09-24 01:18:56",
+                    "created_date": "2019-02-26 06:02:40",
+                    "case_name": "CHALLENGE FINANCIAL SERVCIES, INC VS JOSE JIMENEZ",
+                    "filing_date": "2019-02-25",
+                    "case_id": "FJCRSHJPIAYUUFQTHRKGNB26MBFQ40902",
+                    "case_number": "19CMSC00433",
+                    "docket": "03\/28\/2019  ...  (Small Claims); Filed by: Clerk? <b>Court orders judgment entered for<\/b> Plaintiff Challenge Financial Servcies, Inc ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Compton Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-08-25 01:21:04",
+                    "created_date": "2019-02-26 06:02:40",
+                    "case_name": "JASON ROGERS VS FLORBELINA RUIZ",
+                    "filing_date": "2019-02-25",
+                    "case_id": "FRDRWHZRIIZUYGAVHZLGRCLAMJGRE0904",
+                    "case_number": "19CMSC00435",
+                    "docket": "03\/28\/2019  ...  Order (Nunc Pro Tunc Order)? <b>Court orders judgment entered for<\/b> Plaintiff Jason Rogers against Defendant ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Pasadena Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-09-21 01:10:24",
+                    "created_date": "2019-02-26 06:02:40",
+                    "case_name": "MARIA TERESA GARCIA VS MIKEL PARRAGA WILLS",
+                    "filing_date": "2019-02-25",
+                    "case_id": "FJCRSHJPIAYUUFQTHRKGNB26MBGQY0902",
+                    "case_number": "19PDSC00875",
+                    "docket": "03\/27\/2019  ... \/2019; Result Type to Held? <b>Court orders judgment entered for<\/b> Plaintiff Maria Teresa Garcia against ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Pasadena Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-07-26 00:42:40",
+                    "created_date": "2019-02-26 06:02:40",
+                    "case_name": "RUBEN CHRISTOPHER AVILA VS VALENTINE VALDOVINOS, ET AL.",
+                    "filing_date": "2019-02-25",
+                    "case_id": "FNDBUHRQIEZEWFYUHVKWPCC7MFHA40903",
+                    "case_number": "19PDSC00876",
+                    "docket": "03\/27\/2019  ... .00; Service Cost Waived: No? <b>Court orders judgment entered for<\/b> Plaintiff Ruben Christopher Avila against ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Spring Street Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-12-11 02:22:56",
+                    "created_date": "2019-02-26 06:02:40",
+                    "case_name": "AVETIS BARNASYAN VS ALLSTATE INSURANCE COMPANY OF CALIFORNIA, ET AL.",
+                    "filing_date": "2019-02-25",
+                    "case_id": "FRDRWHZRIIZUYGAVHZLGRCLAMJHRA0904",
+                    "case_number": "19PDSC00877",
+                    "docket": "03\/27\/2019 <b>Court orders judgment entered for<\/b> Plaintiff Avetis Barnasyan against Defendant  ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Compton Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-07-25 01:29:36",
+                    "created_date": "2019-02-23 06:00:32",
+                    "case_name": "CECIL WASHINGTON VS UNITED FININCIAL CASUALTY COMPANY",
+                    "filing_date": "2019-02-22",
+                    "case_id": "FNDBUHRQIEZEWFYUHVKWPCDJNFIBK0930",
+                    "case_number": "19CMSC00422",
+                    "docket": "03\/26\/2019  ... \/2019; Result Type to Held? <b>Court orders judgment entered for<\/b> Defendant United Financial Casualty Company ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            },
+            {
+                "case": {
+                    "case_type": "Other Small Claim",
+                    "case_type_category": "Civil",
+                    "case_type_group": "Small Claim",
+                    "case_status_category": "Disposed",
+                    "case_status_name": "Judgment Entered",
+                    "courthouse": "Pasadena Courthouse",
+                    "state": "CA",
+                    "jurisdiction": "Los Angeles County Superior Courts",
+                    "last_updated_date": "2019-07-26 00:57:36",
+                    "created_date": "2019-02-23 06:02:40",
+                    "case_name": "MICHELLE GASTELUM VS VILLA SAN PASQUAL I, INC.",
+                    "filing_date": "2019-02-22",
+                    "case_id": "GBFR6IZVIY3VAHAZIJNGZDLONZMBG0926",
+                    "case_number": "19PDSC00842",
+                    "docket": "03\/27\/2019  ...  Pasadena Courthouse at Department A? <b>Court orders judgment entered for<\/b> Plaintiff Michelle Gastelum against Defendant ... "
+                },
+                "attorneys": [],
+                "parties": [],
+                "judges": []
+            }
+        ],
+        "total_matches": "832",
+        "post_data": {
+            "query": [
+                {
+                    "search_terms": [
+                        "Court orders judgement entered for",
+                        "Court orders judgment entered for"
+                    ],
+                    "scope": "Contains Any",
+                    "attribute": "Docket",
+                    "proximity": "Next To Each Other"
+                }
+            ],
+            "page": 1,
+            "sort_by": "Filing Date",
+            "filters": [
+                {
+                    "filter_type": "case_type",
+                    "field": "group",
+                    "keys": [
+                        12
+                    ]
+                },
+                {
+                    "filter_type": "case_status",
+                    "field": "name",
+                    "keys": [
+                        4,
+                        5
+                    ]
+                },
+                {
+                    "filter_type": "jurisdiction",
+                    "field": "court_system",
+                    "keys": [
+                        1
+                    ]
+                },
+                {
+                    "filter_type": "docket_date",
+                    "field": "from_date",
+                    "date": "2019-03-01"
+                },
+                {
+                    "filter_type": "docket_date",
+                    "field": "to_date",
+                    "date": "2019-03-31"
+                },
+                {
+                    "filter_type": "filing_date",
+                    "field": "from_date",
+                    "date": "2019-01-01"
+                },
+                {
+                    "filter_type": "filing_date",
+                    "field": "to_date",
+                    "date": "2019-12-31"
+                }
+            ]
+        },
+        "criteria": "(0)"
+    }
+}

@@ -1,0 +1,152 @@
+{
+    "error": false,
+    "message": "OK",
+    "data": {
+        "filter_type": "case_status",
+        "filters": [
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 1,
+                        "name": "Dismissed",
+                        "order": 2204
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 2,
+                        "name": "Judgment Satisfied",
+                        "order": 2205
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 3,
+                        "name": "Judgment Stayed",
+                        "order": 2206
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 4,
+                        "name": "Judgment Entered",
+                        "order": 2207
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 5,
+                        "name": "Other Disposed",
+                        "order": 2208
+                    }
+                ],
+                "field": "category",
+                "key": 1,
+                "name": "Disposed",
+                "order": 2203
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 6,
+                        "name": "Voided",
+                        "order": 2210
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 7,
+                        "name": "Transferred",
+                        "order": 2211
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 8,
+                        "name": "Consolidated",
+                        "order": 2212
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 9,
+                        "name": "Other",
+                        "order": 2213
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 10,
+                        "name": "Stayed",
+                        "order": 2214
+                    }
+                ],
+                "field": "category",
+                "key": 2,
+                "name": "Other",
+                "order": 2209
+            },
+            {
+                "children": [
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 11,
+                        "name": "Case Initiated",
+                        "order": 2216
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 12,
+                        "name": "Discovery",
+                        "order": 2217
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 13,
+                        "name": "Trial",
+                        "order": 2218
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 14,
+                        "name": "Appeal",
+                        "order": 2219
+                    },
+                    {
+                        "children": [],
+                        "field": "name",
+                        "key": 15,
+                        "name": "Other Pending",
+                        "order": 2220
+                    }
+                ],
+                "field": "category",
+                "key": 3,
+                "name": "Pending",
+                "order": 2215
+            },
+            {
+                "children": [],
+                "field": "category",
+                "key": 5,
+                "name": "Not Classified By Court",
+                "order": 2221
+            },
+            {
+                "children": [],
+                "field": "category",
+                "key": 4,
+                "name": "Not Yet Classified",
+                "order": 2222
+            }
+        ]
+    }
+}
