@@ -18,5 +18,11 @@ class Judgment:
         self.unicourtCaseId = unicourtCaseId
         self.caseNumber = caseNumber
 
+    def addDocketToken(self, docketToken):
+        self.docketToken = docketToken
+
     def addDocket(self, docketData):
         self.docket = docketData
+
+    def addParties(self, parties):
+        self.parties = parties

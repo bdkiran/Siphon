@@ -4,10 +4,10 @@ import Judgment
 import logging
 from collections import namedtuple
 
-
 logger = logging.getLogger('ObtainCaseDetails') 
 
 CompleteParty = namedtuple('CompleteParty', [
+    'Token',
     'Participant',
     'Addresses'
 ])
@@ -24,14 +24,29 @@ Address = namedtuple('Address', [
     'State',
     'Zipcode'
 ])
-def buildRequest():
+
+URL = "https://api.unicourt.com/rest/v1/case/"
+TOKEN = "55ebc2e70236ad95b0f8cc6263223dc143a02737"
+
+def getCaseDetails(judgement):
+    endpoint = buildRequest(judgement.caseId)
+    sendRequest(endpoint)
+    parseReponse(judgement.caseId)
+
+def buildRequest(caseId):
+    ##curl -X GET "https://api.unicourt.com/rest/v1/case/FZER2IJTIQ2U4GQXIBMGVC3BMJKRG0906/?token=55ebc2e70236ad95b0f8cc6263223dc143a02737"
     logger.debug('Building unicourt request')
+    return URL + caseId + "/?token=" + TOKEN
 
-def sendRequest():
-    logger.debug('Sending unicourt request')
+def sendRequest(endpoint):
+    logger.debug('Sending unicourt request to: ' + endpoint)
+    #response = requests.get(endpoint)
+    #return response.json
 
-def parseReponse():
+def parseReponse(caseId):
     logger.debug("Parsing unicourt response....")
+    endpoint = buildRequest(caseId)
+    sendRequest(endpoint)
     with open('Requests/caseDetailsResponse.json') as inputFile:
         jsonData = json.load(inputFile)
         data = jsonData['data']
@@ -40,7 +55,7 @@ def parseReponse():
         #obtain docket token
         #where do I store this??
         docketToken = data['docket_entries_token']
-        print(docketToken)
+        #print(docketToken)
 
         #obatin plantif and defendant details
         allPartiesDetials = []
@@ -54,9 +69,10 @@ def parseReponse():
                 details = entity['potentials']
                 for detail in details:
                     potentialAddress = Address(detail['address'], detail['city'], detail['state'], detail['zipcode'])
-                    potentialAddresses.append(potentialAddress)
+                    potentialAddresses.append(potentialAddress._asdict())
 
-            person = CompleteParty(person, potentialAddresses)
-            allPartiesDetials.append(person)
+            person = CompleteParty(docketToken, person._asdict(), potentialAddresses)
+            logger.debug(person._asdict())
+            allPartiesDetials.append(person._asdict())
         
         return allPartiesDetials

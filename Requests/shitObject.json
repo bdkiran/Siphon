@@ -1,0 +1,36 @@
+{
+    "unicourtCaseId": "GBFR6IZVIY3VAHAZIJNGZDLONZMBG0926",
+    "caseNumber": "19PDSC00842",
+    "parties": [
+        {
+            "Participant": {
+                "PartyType": "Defendant",
+                "FirstName": "VIDAL",
+                "LastName": "HERNANDEZ"
+            },
+            "Addresses": [
+                {
+                    "Address": "1159 E. Wasshington Bl",
+                    "City": "Pasadena",
+                    "State": "CA",
+                    "Zipcode": "91104"
+                }
+            ]
+        },
+        {
+            "Participant": {
+                "PartyType": "Plaintiff",
+                "FirstName": "LISA",
+                "LastName": "RUCKH"
+            },
+            "Addresses": [
+                {
+                    "Address": "6635 Radford Ave",
+                    "City": "North Hollywood",
+                    "State": "CA",
+                    "Zipcode": "91606"
+                }
+            ]
+        }
+    ]
+}
