@@ -6,8 +6,12 @@ from collections import namedtuple
 
 logger = logging.getLogger('ObtainCaseDetails') 
 
+CaseDetails = namedtuple('CaseDetails', [
+    'DocketToken',
+    'PartyInfo'
+])
+
 CompleteParty = namedtuple('CompleteParty', [
-    'Token',
     'Participant',
     'Addresses'
 ])
@@ -50,10 +54,7 @@ def parseReponse(caseId):
     with open('Requests/caseDetailsResponse.json') as inputFile:
         jsonData = json.load(inputFile)
         data = jsonData['data']
-        #print(json.dumps(jsonData, indent = 4))
 
-        #obtain docket token
-        #where do I store this??
         docketToken = data['docket_entries_token']
         #print(docketToken)
 
@@ -71,8 +72,11 @@ def parseReponse(caseId):
                     potentialAddress = Address(detail['address'], detail['city'], detail['state'], detail['zipcode'])
                     potentialAddresses.append(potentialAddress._asdict())
 
-            person = CompleteParty(docketToken, person._asdict(), potentialAddresses)
+            person = CompleteParty(person._asdict(), potentialAddresses)
             logger.debug(person._asdict())
             allPartiesDetials.append(person._asdict())
         
-        return allPartiesDetials
+        caseDetail = CaseDetails(docketToken, allPartiesDetials)
+
+        
+        return caseDetail

@@ -1,7 +1,7 @@
 import requests
 import json
 import math
-import Judgment
+from Judgment import Judgment
 import logging
 
 URL = 'https://api.unicourt.com/rest/v1/search/?token='
@@ -10,7 +10,7 @@ TIMEOUT_TIME = 5
 
 logger = logging.getLogger('ObtainCases') 
 
-#Is this where I want to stroe the state.
+#Is this where I want to store the state of the request.
 DOCKER_START_DATE = "2019-03-01"
 DOCKET_END_DATE = "2019-03-31"
 CURRENT_PAGE = 1
@@ -52,7 +52,8 @@ def makeRequest(payload):
     #mocks for downstream function
     with open('Requests/searchResponse.json') as inputFile:
         return json.load(inputFile)
-    #actual sending of request
+    # Actual sending of request. Fix error handling logic
+    # Not sure if that has required coverage.
     # try:
     #     response = requests.post(url = apiEndpoint, json=payload, timeout=TIMEOUT_TIME)
     #     response.raise_for_status()
@@ -80,11 +81,12 @@ def parseReponse(jsonData):
         total_matches_for_query = int(jsonData['data']['total_matches'])
         MAX_PAGES = math.ceil(total_matches_for_query/10)
 
+    #parse for caseId and CaseNumber
     innerData = jsonData['data']['result']
     cases = []
     for case in innerData:
-        caseThing = case['case']
+        caseInfo = case['case']
         #print(json.dumps(caseThing, indent=4))
-        judge = Judgment.Judgment(caseThing['case_id'], caseThing['case_number'])
+        judge = Judgment(caseInfo['case_id'], caseInfo['case_number'])
         cases.append(judge)
     return cases
