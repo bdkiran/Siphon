@@ -1,3 +1,5 @@
+from decimal import Decimal
+
 class Judgment:
     
     #Data model
@@ -21,8 +23,13 @@ class Judgment:
     def addDocketToken(self, docketToken):
         self.docketToken = docketToken
 
-    def addDocket(self, docketData):
-        self.docket = docketData
-
     def addParties(self, parties):
         self.parties = parties
+
+    def addJudmentDetails(self, judgmentAmount, judgmentDate):
+        self.judgmentDate = judgmentDate
+        if isinstance(judgmentAmount, Decimal):
+            self.judgmentAmount = float(judgmentAmount)  
+
+    def addDocket(self, docketData):
+        self.docket = docketData

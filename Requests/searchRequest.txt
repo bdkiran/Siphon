@@ -1,7 +1,12 @@
 Rebuild request using parameters from the app.
 token="55ebc2e70236ad95b0f8cc6263223dc143a02737"
 
+//Get Cases
 curl -X POST "https://api.unicourt.com/rest/v1/search/?token=55ebc2e70236ad95b0f8cc6263223dc143a02737" -H "Content-Type: application/json" -d 
 '{ "query":[ { "search_terms":[ "Court orders judgement entered for", "Court orders judgment entered for" ], "scope":"Contains Any", "attribute":"Docket", "proximity":"Next To Each Other" } ], "page": 1, "sort_by":"Filing Date", "filters":[ { "filter_type":"case_type", "field":"group", "keys":[ 12 ] }, { "filter_type":"case_status", "field":"name", "keys":[ 4, 5 ] }, { "filter_type":"jurisdiction", "field":"court_system", "keys":[ 1 ] }, { "filter_type":"docket_date", "field":"from_date", "date":"2019-03-01" }, { "filter_type":"docket_date", "field":"to_date", "date":"2019-03-31" }, { "filter_type":"filing_date", "field":"from_date", "date":"2019-01-01" }, { "filter_type":"filing_date", "field":"to_date", "date":"2019-12-31" } ] }'
 
+//Get Case Deatils
 curl -X GET "https://api.unicourt.com/rest/v1/case/FZER2IJTIQ2U4GQXIBMGVC3BMJKRG0906/?token=55ebc2e70236ad95b0f8cc6263223dc143a02737" -H "accept: application/json"
+
+//Get Case docket
+https://api.unicourt.com/rest/v1/case/FJCRSHJPIAYUUFQTHRKGNB26MBFQ40902/docketEntries/?token=55ebc2e70236ad95b0f8cc6263223dc143a02737&docket_entries_token=6a8e1eb81373f7099d3f7abdea6d4889ba6348fe&sort=DESC

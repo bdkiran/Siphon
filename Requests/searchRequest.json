@@ -8,6 +8,15 @@
         "scope":"Contains Any",
         "attribute":"Docket",
         "proximity":"Next To Each Other"
+      },
+      {
+        "search_terms":[
+          "Writ of Execution",
+          "Acknowledgment of Satisfaction of Judgment"
+        ],
+        "scope":"Contains Any",
+        "attribute":"Docket",
+        "condition":"AND"
       }
     ],
     "page": 1,

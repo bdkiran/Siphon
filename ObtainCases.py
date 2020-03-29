@@ -8,7 +8,7 @@ URL = 'https://api.unicourt.com/rest/v1/search/?token='
 TOKEN = '55ebc2e70236ad95b0f8cc6263223dc143a02737'
 TIMEOUT_TIME = 5
 
-logger = logging.getLogger('ObtainCases') 
+logger = logging.getLogger('siphon_application.ObtainCases') 
 
 #Is this where I want to store the state of the request.
 DOCKER_START_DATE = "2019-03-01"
@@ -19,14 +19,17 @@ MAX_PAGES = 100
 def getCases():
     global CURRENT_PAGE
     allCases = []
-    while(CURRENT_PAGE < MAX_PAGES):
-        logger.info('Page: ' + str(CURRENT_PAGE))
+    if CURRENT_PAGE < MAX_PAGES:
+        logger.debug('Page: ' + str(CURRENT_PAGE))
         payload = buildRequest()
         jsonData = makeRequest(payload)
         for case in parseReponse(jsonData):
             allCases.append(case)
         CURRENT_PAGE = CURRENT_PAGE + 1
-    return allCases
+        return allCases
+    else:
+        return None
+    
 
 #Currently request payload is stored in a json file
 #is there a more elegant solution to this?
@@ -47,7 +50,7 @@ def buildRequest():
 #add error handling
 def makeRequest(payload):
     apiEndpoint = URL + TOKEN
-    logger.debug("Sending Request to " + apiEndpoint)
+    logger.debug("Sending Request to: " + apiEndpoint)
     #print(type(payload))
     #mocks for downstream function
     with open('Requests/searchResponse.json') as inputFile:
@@ -74,8 +77,8 @@ def makeRequest(payload):
 #On first request determine how many total pages for time period
 #Return the cases
 def parseReponse(jsonData):
-    global MAX_PAGES
     logger.debug("Parsing unicourt response....")
+    global MAX_PAGES
     if CURRENT_PAGE == 1:
         #This will let us know how many pages to iterate through
         total_matches_for_query = int(jsonData['data']['total_matches'])
